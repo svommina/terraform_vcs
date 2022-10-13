@@ -3,13 +3,15 @@ locals {
     default = "10.0.0.0/16"
     staging = "10.0.0.0/16"
     testing = "10.1.0.0/16"
+    terraform_vcs ="10.1.0.0/16"
   }
   subnet_names = ["subnet1","subnet2"]
   subnet_prefixes = ["10.0.1.0/24", "10.1.1.0/24" ]
   index_ws = {
     default=0
     staging=0 
-    testing=1     
+    testing=1 
+    terraform_vcs=1  
   }
 }
 
